@@ -1,0 +1,40 @@
+{
+  "name": "module-dev-kit",
+  "version": "0.0.1",
+  "description": "Module development kit",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "nodemon $NODE_DEBUG_OPTION app.js",
+    "test": "mocha **/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karbunkul/module-dev-kit.git"
+  },
+  "test-config": {
+    "foo": "bar"
+  },
+  "keywords": [
+    "development"
+  ],
+  "author": "Alexander Pokhodyun <karbunkul@yourtask.ru> (https://emerap.com)",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0"
+  },
+  "optionalDependencies": {
+    "js-yaml": "^3.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
