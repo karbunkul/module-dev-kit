@@ -14,9 +14,13 @@ Module development helpers
 Return {string} node or browser.
 
 ### moduleDir
+- *module* **required** - NodeJs module object
+
 Return {string|false} module root directory
 
 ### packageInfo
+- *module* **required** - NodeJs module object
+
 Return {string|false} package.json object
 
 ### loadConfig

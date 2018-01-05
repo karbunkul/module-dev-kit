@@ -1,4 +1,7 @@
 const mdk = require('./lib/index')
 
-const config = mdk.loadConfig({name: 'test-config'})
-console.log(config)
+console.log(mdk.moduleDir(module))
+
+console.log(mdk.packageInfo(module))
+
+console.log(mdk.loadConfig({name: 'test-config', module}))
